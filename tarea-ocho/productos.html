@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Pizza Hut</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+  <main class="max-w-7xl mx-auto p-2 sm:p-4">
+
+    <section
+      class="grid grid-cols-1 gap-3
+             sm:grid-cols-2
+             md:grid-cols-3
+             lg:grid-cols-4">
+
+      <!-- PRODUCTO 1 -->
+      <article class="border border-gray-300 bg-white shadow-sm overflow-hidden">
+
+        <img
+          src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+          alt="Pizza de pepperoni"
+          class="w-full aspect-[4/3] object-cover">
+
+        <div class="p-3">
+
+          <h2 class="text-center text-xs font-bold text-red-600 uppercase">
+            Hut Cheese Mediana
+          </h2>
+
+          <p class="mt-2 text-xs leading-5">
+            Pizza Hut Cheese en presentación de cuatro porciones cargadas
+            con abundante queso mozzarella a la orilla.
+          </p>
+
+          <div class="mt-3 border-t pt-2">
+
+            <div class="flex items-center justify-between">
+
+              <div>
+                <span class="block text-[10px] font-bold">
+                  DESDE
+                </span>
+
+                <span class="precio text-sm font-bold text-red-600">
+                  LPS. 139.00
+                </span>
+              </div>
+
+              <button
+                type="button"
+                onclick="ordenar(this)"
+                class="bg-lime-600 hover:bg-lime-700 text-white text-[10px] font-bold px-3 py-2 rounded">
+                ORDENAR
+              </button>
+
+            </div>
+
+            <div class="mt-2 flex items-center gap-2 text-xs">
+
+              <span class="font-bold">
+                CANTIDAD:
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, -1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                −
+              </button>
+
+              <span class="cantidad font-bold">
+                1
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, 1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                +
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+
+      <!-- PRODUCTO 2 -->
+      <article class="border border-gray-300 bg-white shadow-sm overflow-hidden">
+
+        <img
+          src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80"
+          alt="Pizza Cheese Burst"
+          class="w-full aspect-[4/3] object-cover">
+
+        <div class="p-3">
+
+          <h2 class="text-center text-xs font-bold text-red-600 uppercase">
+            Pizza Cheese-Burst
+          </h2>
+
+          <p class="mt-2 text-xs leading-5">
+            Deliciosa pizza con borde relleno de queso mozzarella y pepperoni.
+          </p>
+
+          <div class="mt-3 border-t pt-2">
+
+            <div class="flex items-center justify-between">
+
+              <div>
+                <span class="block text-[10px] font-bold">
+                  DESDE
+                </span>
+
+                <span class="precio text-sm font-bold text-red-600">
+                  LPS. 159.00
+                </span>
+              </div>
+
+              <button
+                type="button"
+                onclick="ordenar(this)"
+                class="bg-lime-600 hover:bg-lime-700 text-white text-[10px] font-bold px-3 py-2 rounded">
+                ORDENAR
+              </button>
+
+            </div>
+
+            <div class="mt-2 flex items-center gap-2 text-xs">
+
+              <span class="font-bold">
+                CANTIDAD:
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, -1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                −
+              </button>
+
+              <span class="cantidad font-bold">
+                1
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, 1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                +
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+
+      <!-- PRODUCTO 3 -->
+      <article class="border border-gray-300 bg-white shadow-sm overflow-hidden">
+
+        <img
+          src="https://images.unsplash.com/photo-1594007654729-407eedc4be65?auto=format&fit=crop&w=800&q=80"
+          alt="Big New Yorker Hot Honey"
+          class="w-full aspect-[4/3] object-cover">
+
+        <div class="p-3">
+
+          <h2 class="text-center text-xs font-bold text-red-600 uppercase">
+            Big New Yorker Hot Honey
+          </h2>
+
+          <p class="mt-2 text-xs leading-5">
+            Sabor sorprendente con queso, pepperoni y un toque dulce de miel.
+          </p>
+
+          <div class="mt-3 border-t pt-2">
+
+            <div class="flex items-center justify-between">
+
+              <div>
+                <span class="block text-[10px] font-bold">
+                  DESDE
+                </span>
+
+                <span class="precio text-sm font-bold text-red-600">
+                  LPS. 175.00
+                </span>
+              </div>
+
+              <button
+                type="button"
+                onclick="ordenar(this)"
+                class="bg-lime-600 hover:bg-lime-700 text-white text-[10px] font-bold px-3 py-2 rounded">
+                ORDENAR
+              </button>
+
+            </div>
+
+            <div class="mt-2 flex items-center gap-2 text-xs">
+
+              <span class="font-bold">
+                CANTIDAD:
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, -1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                −
+              </button>
+
+              <span class="cantidad font-bold">
+                1
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, 1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                +
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+
+      <!-- PRODUCTO 4 -->
+      <article class="border border-gray-300 bg-white shadow-sm overflow-hidden">
+
+        <img
+          src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80"
+          alt="Big New Yorker Bacon"
+          class="w-full aspect-[4/3] object-cover">
+
+        <div class="p-3">
+
+          <h2 class="text-center text-xs font-bold text-red-600 uppercase">
+            Big New Yorker Bacon
+          </h2>
+
+          <p class="mt-2 text-xs leading-5">
+            Pizza con ingredientes seleccionados, queso y delicioso bacon.
+          </p>
+
+          <div class="mt-3 border-t pt-2">
+
+            <div class="flex items-center justify-between">
+
+              <div>
+                <span class="block text-[10px] font-bold">
+                  DESDE
+                </span>
+
+                <span class="precio text-sm font-bold text-red-600">
+                  LPS. 189.00
+                </span>
+              </div>
+
+              <button
+                type="button"
+                onclick="ordenar(this)"
+                class="bg-lime-600 hover:bg-lime-700 text-white text-[10px] font-bold px-3 py-2 rounded">
+                ORDENAR
+              </button>
+
+            </div>
+
+            <div class="mt-2 flex items-center gap-2 text-xs">
+
+              <span class="font-bold">
+                CANTIDAD:
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, -1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                −
+              </button>
+
+              <span class="cantidad font-bold">
+                1
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, 1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                +
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+
+      <!-- PRODUCTO 5 -->
+      <article class="border border-gray-300 bg-white shadow-sm overflow-hidden">
+
+        <img
+          src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80"
+          alt="Big New Yorker Triple"
+          class="w-full aspect-[4/3] object-cover">
+
+        <div class="p-3">
+
+          <h2 class="text-center text-xs font-bold text-red-600 uppercase">
+            Big New Yorker Triple
+          </h2>
+
+          <p class="mt-2 text-xs leading-5">
+            Una combinación especial de ingredientes para disfrutar en familia.
+          </p>
+
+          <div class="mt-3 border-t pt-2">
+
+            <div class="flex items-center justify-between">
+
+              <div>
+                <span class="block text-[10px] font-bold">
+                  DESDE
+                </span>
+
+                <span class="precio text-sm font-bold text-red-600">
+                  LPS. 205.00
+                </span>
+              </div>
+
+              <button
+                type="button"
+                onclick="ordenar(this)"
+                class="bg-lime-600 hover:bg-lime-700 text-white text-[10px] font-bold px-3 py-2 rounded">
+                ORDENAR
+              </button>
+
+            </div>
+
+            <div class="mt-2 flex items-center gap-2 text-xs">
+
+              <span class="font-bold">
+                CANTIDAD:
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, -1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                −
+              </button>
+
+              <span class="cantidad font-bold">
+                1
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, 1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                +
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+
+      <!-- PRODUCTO 6 -->
+      <article class="border border-gray-300 bg-white shadow-sm overflow-hidden">
+
+        <img
+          src="https://images.unsplash.com/photo-1579751626657-72bc17010498?auto=format&fit=crop&w=800&q=80"
+          alt="Pizza 4 Estaciones"
+          class="w-full aspect-[4/3] object-cover">
+
+        <div class="p-3">
+
+          <h2 class="text-center text-xs font-bold text-red-600 uppercase">
+            4 Estaciones
+          </h2>
+
+          <p class="mt-2 text-xs leading-5">
+            Cuatro diferentes ingredientes reunidos en una deliciosa pizza.
+          </p>
+
+          <div class="mt-3 border-t pt-2">
+
+            <div class="flex items-center justify-between">
+
+              <div>
+                <span class="block text-[10px] font-bold">
+                  DESDE
+                </span>
+
+                <span class="precio text-sm font-bold text-red-600">
+                  LPS. 210.00
+                </span>
+              </div>
+
+              <button
+                type="button"
+                onclick="ordenar(this)"
+                class="bg-lime-600 hover:bg-lime-700 text-white text-[10px] font-bold px-3 py-2 rounded">
+                ORDENAR
+              </button>
+
+            </div>
+
+            <div class="mt-2 flex items-center gap-2 text-xs">
+
+              <span class="font-bold">
+                CANTIDAD:
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, -1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                −
+              </button>
+
+              <span class="cantidad font-bold">
+                1
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, 1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                +
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+
+      <!-- PRODUCTO 7 -->
+      <article class="border border-gray-300 bg-white shadow-sm overflow-hidden">
+
+        <img
+          src="https://images.unsplash.com/photo-1566843972142-a7fcb70de55a?auto=format&fit=crop&w=800&q=80"
+          alt="Pizza Base de Queso"
+          class="w-full aspect-[4/3] object-cover">
+
+        <div class="p-3">
+
+          <h2 class="text-center text-xs font-bold text-red-600 uppercase">
+            Pizza Base de Queso
+          </h2>
+
+          <p class="mt-2 text-xs leading-5">
+            Pizza preparada con una deliciosa base de queso y masa dorada.
+          </p>
+
+          <div class="mt-3 border-t pt-2">
+
+            <div class="flex items-center justify-between">
+
+              <div>
+                <span class="block text-[10px] font-bold">
+                  DESDE
+                </span>
+
+                <span class="precio text-sm font-bold text-red-600">
+                  LPS. 198.00
+                </span>
+              </div>
+
+              <button
+                type="button"
+                onclick="ordenar(this)"
+                class="bg-lime-600 hover:bg-lime-700 text-white text-[10px] font-bold px-3 py-2 rounded">
+                ORDENAR
+              </button>
+
+            </div>
+
+            <div class="mt-2 flex items-center gap-2 text-xs">
+
+              <span class="font-bold">
+                CANTIDAD:
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, -1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                −
+              </button>
+
+              <span class="cantidad font-bold">
+                1
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, 1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                +
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+
+      <!-- PRODUCTO 8 -->
+      <article class="border border-gray-300 bg-white shadow-sm overflow-hidden">
+
+        <img
+          src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=800&q=80"
+          alt="Pizza Familiar Especial"
+          class="w-full aspect-[4/3] object-cover">
+
+        <div class="p-3">
+
+          <h2 class="text-center text-xs font-bold text-red-600 uppercase">
+            Pizza Familiar Especial
+          </h2>
+
+          <p class="mt-2 text-xs leading-5">
+            Una pizza familiar con ingredientes seleccionados y mucho sabor.
+          </p>
+
+          <div class="mt-3 border-t pt-2">
+
+            <div class="flex items-center justify-between">
+
+              <div>
+                <span class="block text-[10px] font-bold">
+                  DESDE
+                </span>
+
+                <span class="precio text-sm font-bold text-red-600">
+                  LPS. 225.00
+                </span>
+              </div>
+
+              <button
+                type="button"
+                onclick="ordenar(this)"
+                class="bg-lime-600 hover:bg-lime-700 text-white text-[10px] font-bold px-3 py-2 rounded">
+                ORDENAR
+              </button>
+
+            </div>
+
+            <div class="mt-2 flex items-center gap-2 text-xs">
+
+              <span class="font-bold">
+                CANTIDAD:
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, -1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                −
+              </button>
+
+              <span class="cantidad font-bold">
+                1
+              </span>
+
+              <button
+                type="button"
+                onclick="cambiarCantidad(this, 1)"
+                class="w-6 h-6 rounded-full bg-gray-200 hover:bg-gray-300 font-bold">
+                +
+              </button>
+
+            </div>
+
+          </div>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+
+  <!-- JAVASCRIPT DE LOS BOTONES -->
+  <script>
+
+    // BOTONES + Y -
+    function cambiarCantidad(boton, cambio) {
+
+      const contenedor = boton.parentElement;
+
+      const cantidad =
+        contenedor.querySelector(".cantidad");
+
+      let valor =
+        parseInt(cantidad.textContent);
+
+      valor = valor + cambio;
+
+      // La cantidad mínima es 1
+      if (valor < 1) {
+        valor = 1;
+      }
+
+      cantidad.textContent = valor;
+    }
+
+
+    // BOTÓN ORDENAR
+    function ordenar(boton) {
+
+      const producto =
+        boton.closest("article");
+
+      const nombre =
+        producto.querySelector("h2")
+        .textContent
+        .trim();
+
+      const precio =
+        producto.querySelector(".precio")
+        .textContent
+        .trim();
+
+      const cantidadElemento =
+        producto.querySelector(".cantidad");
+
+      const cantidad =
+        cantidadElemento
+          ? parseInt(cantidadElemento.textContent)
+          : 1;
+
+      // Obtener el precio numérico
+      const precioNumerico =
+        parseFloat(
+          precio.replace("LPS.", "")
+                .replace(",", "")
+                .trim()
+        );
+
+      const total =
+        precioNumerico * cantidad;
+
+      alert(
+        "🍕 PRODUCTO AGREGADO\n\n" +
+
+        "Producto: " + nombre + "\n" +
+
+        "Precio: " + precio + "\n" +
+
+        "Cantidad: " + cantidad + "\n\n" +
+
+        "TOTAL: LPS. " +
+        total.toFixed(2)
+      );
+
+    }
+
+  </script>
+
+</body>
+</html>
